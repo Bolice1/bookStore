@@ -4,11 +4,11 @@ import booksRoute from './routes/books.routes.js'
 const app = express();
 
 
-// let us bind the port to the server 
 app.use(express.json())
 
 app.use('/api/books', booksRoute)
 
+// let us bind the port to the server 
 
 app.listen(env.port, () => {
     console.log(`Server running on port ${env.port}`)
